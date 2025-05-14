@@ -1,0 +1,153 @@
+/* Full Width Header */
+.section-header {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .navbar {
+    padding: 0.75rem 2rem; /* Increased padding for more balance */
+  }
+  
+  /* Ensure navbar spans full width */
+  .navbar-full-width {
+    width: 100%; 
+    padding: 0;
+  }
+  
+  /* Container for full width */
+  .container-fluid {
+    width: 100%;
+    margin-right: 100px;
+    padding: 0;
+  }
+  
+  /* Larger logo with some spacing adjustments */
+  .logo {
+    height: 180px; /* Adjust the logo size */
+    width: auto;
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+  
+  /* Center the search form */
+  .search-form {
+    display: flex;
+    justify-content: center; /* Center align the search form */
+    width: 350px; 
+    margin-top: 20px; /* Center it horizontally */
+  }
+  
+  .search-form .form-control {
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    flex-grow: 1; /* Ensure the input takes the available space */
+  }
+  
+  .search-form .btn {
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for search button */
+  .search-form .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Navbar Items Styling */
+  .nav-link {
+    color: #333;
+  }
+  
+  .nav-link:hover {
+    color: #0d6efd;
+  }
+  
+  /* User Section */
+  .user-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 1rem;
+  }
+  
+  .user-section .nav-link {
+    color: #333;
+  }
+  
+  .user-section .nav-link:hover {
+    color: #0d6efd;
+  }
+  
+  .cart-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ff4d00;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    min-width: 18px;
+    text-align: center;
+  }
+  
+  /* Dropdown Styles */
+  .nav-item .dropdown-menu {
+    border-radius: 8px;
+  }
+  
+  .dropdown-item {
+    padding: 8px 16px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991px) {
+    .container-fluid {
+      padding: 0 1rem;
+    }
+  
+    .search-form {
+      width: 100%; /* Full width on smaller screens */
+    }
+    
+    .navbar-nav {
+      flex-direction: column; /* Stack navbar items vertically */
+      align-items: center; /* Center align them */
+    }
+  
+    .navbar {
+      padding: 0.75rem; /* Reduce padding for mobile */
+    }
+  
+    /* Adjust the logo for smaller screens */
+    .logo {
+      height: 60px;
+    }
+  
+    /* Align user and cart section on top of each other */
+    .user-section {
+      gap: 10px;
+      margin-left: 0;
+    }
+  }
+  

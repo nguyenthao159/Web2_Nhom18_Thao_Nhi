@@ -1,0 +1,87 @@
+.footer {
+    background-color: #343a40; /* Màu nền tối */
+    color: #ffffff;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+.footer h5.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer p,
+.footer ul {
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    color: #f8d210; /* Màu vàng nổi bật khi hover */
+}
+
+.footer .list-icon li {
+    display: flex;
+    align-items: center;
+}
+
+.footer .list-icon li i {
+    margin-right: 10px;
+    color: #f8d210;
+}
+
+.footer .form-inline input {
+    width: 70%;
+    border-radius: 5px;
+}
+
+.footer .form-inline button {
+    background-color: #f8d210;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer .form-inline button:hover {
+    background-color: #ffc107;
+}
+
+.footer .social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #f8d210;
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 13px;
+    text-align: center;
+    color: #ccc;
+}

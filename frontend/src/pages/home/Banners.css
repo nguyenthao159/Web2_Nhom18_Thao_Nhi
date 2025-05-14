@@ -1,0 +1,89 @@
+/* Section tổng thể */
+.banner-section {
+    padding: 50px 0;
+}
+
+/* Card banner */
+.card-banner {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card-banner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ảnh banner */
+.card-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.card-banner:hover .card-img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Overlay với hiệu ứng gradient */
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 25px;
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    transition: background 0.3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+}
+
+.card-banner:hover .card-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+}
+
+/* Tiêu đề */
+.card-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Văn bản */
+.card-text {
+    font-size: 16px;
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+
+/* Nút Discover */
+.btn-discover {
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -o-transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-discover:hover {
+    background: #ffdb4d;
+    transform: scale(1.05);
+}
